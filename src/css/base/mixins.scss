@@ -1,0 +1,243 @@
+// =================================================================================================
+// Screen Sizes
+// =================================================================================================
+// Target only mobile screen sizes
+@mixin mobile-only {
+  @media screen and (max-width: 766px) {
+    @content;
+  }
+}
+
+// Target tablet screen sizes and above
+@mixin tablet {
+  @media screen and (min-width: 767px) {
+    @content;
+  }
+}
+
+// Target only tablet screen sizes
+@mixin tablet-only {
+  @media screen and (min-width: 767px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+// Target desktop screen sizes
+@mixin desktop {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+// =================================================================================================
+// Animations
+// =================================================================================================
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 300rem;
+  }
+}
+
+// =================================================================================================
+// Fonts
+// =================================================================================================
+// Set the font for all text elements on a page
+@mixin setFont($fasciaFont) {
+  $fonts: $fasciaFont, Helvetica, Arial, sans-serif, serif;
+
+  a,
+  abbr,
+  acronym,
+  address,
+  applet,
+  area,
+  article,
+  aside,
+  audio,
+  b,
+  base,
+  basefont,
+  bdi,
+  bdo,
+  big,
+  blockquote,
+  br,
+  button,
+  canvas,
+  caption,
+  center,
+  cite,
+  code,
+  col,
+  colgroup,
+  datalist,
+  dd,
+  del,
+  details,
+  dfn,
+  dialog,
+  dir,
+  div,
+  dl,
+  dt,
+  em,
+  embed,
+  fieldset,
+  figcaption,
+  figure,
+  font,
+  footer,
+  form,
+  frame,
+  frameset,
+  head,
+  header,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  i,
+  iframe,
+  img,
+  input,
+  ins,
+  kbd,
+  keygen,
+  label,
+  legend,
+  li,
+  link,
+  main,
+  map,
+  mark,
+  menu,
+  menuitem,
+  meta,
+  meter,
+  nav,
+  noscript,
+  object,
+  ol,
+  optgroup,
+  option,
+  output,
+  param,
+  progress,
+  q,
+  rp,
+  rt,
+  ruby,
+  s,
+  samp,
+  script,
+  section,
+  select,
+  small,
+  source,
+  span,
+  strike,
+  strong,
+  style,
+  sub,
+  summary,
+  sup,
+  table,
+  tbody,
+  td,
+  textarea,
+  tfoot,
+  th,
+  thead,
+  time,
+  title,
+  tr,
+  track,
+  tt,
+  u,
+  var,
+  video,
+  wbr {
+    font-family: $fonts;
+  }
+}
+
+// =================================================================================================
+// Hover Effects
+// =================================================================================================
+// Change the colour of text when hovered (useful for UX on desktop)
+@mixin hover-text($colour, $activeColour) {
+  color: $colour;
+
+  &:hover {
+    color: $activeColour;
+  }
+}
+
+// Invert the colours of an element on hover
+@mixin hover-invert($textColour, $bgColour) {
+  background-color: $bgColour;
+  color: $textColour;
+
+  &:hover {
+    background-color: $textColour;
+    color: $bgColour;
+  }
+}
+
+// Underline an element on hover
+@mixin hover-underline($size, $borderColour) {
+  border-bottom: $size solid transparent;
+  padding-bottom: 0.5rem;
+  transition: border 0.5s;
+
+  &:hover {
+    border-bottom-color: $borderColour;
+  }
+}
+
+// =================================================================================================
+// Positioning
+// =================================================================================================
+// Absolutely position an element based on the string passed
+@mixin position-absolute($direction) {
+  position: absolute;
+  top: 0;
+
+  @if $direction== 'left' {
+    left: 0;
+  } @else if $direction== 'right' {
+    right: 0;
+  }
+}
+
+@mixin center-align {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// =================================================================================================
+// General
+// =================================================================================================
+// Turn the element into a flexbox (all content centered by default)
+@mixin flexbox {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
