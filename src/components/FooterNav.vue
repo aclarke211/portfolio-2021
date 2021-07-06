@@ -1,8 +1,9 @@
 <template>
   <div :class="className">
     <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <router-link to="/">About</router-link>
+      <router-link to="/dev">Dev</router-link>
+      <router-link to="/sites">Sites</router-link>
     </div>
     <img class="badge" src="../assets/team-lead-sig.png" />
   </div>
@@ -38,7 +39,7 @@ export default {
       a {
         font-weight: bold;
         color: grey;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         margin: 1rem;
         text-decoration: none;
 
@@ -49,7 +50,7 @@ export default {
     }
 
     .badge {
-      width: 14rem;
+      width: 12rem;
       height: auto;
     }
   }
