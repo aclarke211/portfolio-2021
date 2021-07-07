@@ -94,16 +94,31 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../css/base/mixins.scss';
+
 .dev {
   padding: 0 0 12rem;
+
+  @include desktop {
+    padding: 0 0 10rem;
+  }
 
   .section {
     display: flex;
     flex-direction: column;
     margin: .5rem 0;
 
+    @include desktop {
+      margin: 0;
+    }
+
     .title {
-      font-size: 2rem
+      font-size: 2rem;
+      margin: 2rem 0;
+
+      @include desktop {
+        margin: 1rem 0;
+      }
     }
 
     .items__container {
@@ -111,6 +126,10 @@ export default {
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
+
+      @include desktop {
+        justify-content: flex-start;
+      }
 
       .item {
         display: flex;
@@ -123,10 +142,15 @@ export default {
           width: 80px;
           height: auto;
           display: block;
+
+          @include desktop {
+            width: 60px;
+          }
         }
 
         &__name {
           font-size: 1rem;
+
         }
       }
     }

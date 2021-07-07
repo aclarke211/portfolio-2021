@@ -44,6 +44,10 @@ export default {
       padding: 0;
       transition: all .35s;
       animation: grow 30s;
+
+      @include desktop {
+        font-size: 5rem;
+      }
     }
   }
 }
