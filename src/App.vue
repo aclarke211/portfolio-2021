@@ -32,7 +32,9 @@ html, body {
 }
 
 .router {
-  animation: grow 10s, fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+  overflow-y: auto;
+  min-height: 75vh;
 }
 
 #app {

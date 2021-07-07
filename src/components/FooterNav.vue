@@ -34,15 +34,16 @@ export default {
     align-items: center;
     padding: 2rem 1rem;
     box-sizing: border-box;
+    background: linear-gradient(to bottom, #312d2d, #272323);
 
     #nav {
-      margin: 1rem 1rem 3rem;
+      margin: 0 1rem 2rem;
       height: 100%;
 
       a {
         font-weight: bold;
         color: grey;
-        font-size: 2.25rem;
+        font-size: 2rem;
         margin: 1rem;
         text-decoration: none;
 
