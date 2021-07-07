@@ -5,8 +5,8 @@
       <router-link to="/dev">DEV</router-link>
       <!-- <router-link to="/sites">Sites</router-link> -->
     </div>
-    <img class="badge" src="../assets/team-lead-sig.png" />
-    <p class="date">2021</p>
+    <!-- <img class="badge" src="../assets/team-lead-sig.png" /> -->
+    <p class="date">Alex Clarke 2021</p>
   </div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
     align-items: center;
     padding: 2rem 1rem;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, #312d2d, #272323);
+    background: linear-gradient(to bottom, #242323, #161515);
 
     #nav {
       margin: 0 1rem 2rem;
@@ -61,7 +61,7 @@ export default {
 
     .date {
       font-size: .75rem;
-      margin: 1rem 0 0;
+      margin: 0;
       padding: 0;
     }
   }

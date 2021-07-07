@@ -35,6 +35,8 @@ export default {
   .word-list {
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    overflow: hidden;
 
     .word {
       font-size: 3.5rem;

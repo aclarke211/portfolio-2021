@@ -23,12 +23,15 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400');
 
-html, body {
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #2f2a2a, #2c2929);
+  // background: linear-gradient(to bottom, #2f2a2a, #2c2929);
+  background: linear-gradient(-45deg, #3965dd, #db6cc0, #9579e0, #69ceb5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 .router {
