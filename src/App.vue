@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import './css/base/mixins.scss';
+
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400');
 
 html, body {
@@ -27,6 +29,10 @@ html, body {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, #2f2a2a, #2c2929);
+}
+
+.router {
+  animation: grow 10s, fadeIn 1.5s;
 }
 
 #app {

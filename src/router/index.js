@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import About from '../views/About.vue';
+import Bio from '../views/Bio.vue';
 
 Vue.use(VueRouter);
 
@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'About',
-    component: About,
+    component: Bio,
   },
   {
     path: '/dev',

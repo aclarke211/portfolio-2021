@@ -1,11 +1,12 @@
 <template>
   <div :class="className">
     <div id="nav">
-      <router-link to="/">About</router-link>
-      <router-link to="/dev">Dev</router-link>
-      <router-link to="/sites">Sites</router-link>
+      <router-link to="/">BIO</router-link>
+      <router-link to="/dev">DEV</router-link>
+      <!-- <router-link to="/sites">Sites</router-link> -->
     </div>
     <img class="badge" src="../assets/team-lead-sig.png" />
+    <p class="date">2021</p>
   </div>
 </template>
 
@@ -20,6 +21,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../css/base/mixins.scss';
+
   .footer-comp {
     position: fixed;
     bottom: 0;
@@ -39,7 +42,7 @@ export default {
       a {
         font-weight: bold;
         color: grey;
-        font-size: 1.75rem;
+        font-size: 2.25rem;
         margin: 1rem;
         text-decoration: none;
 
@@ -52,6 +55,13 @@ export default {
     .badge {
       width: 12rem;
       height: auto;
+      border-radius: .25rem;
+    }
+
+    .date {
+      font-size: .75rem;
+      margin: 1rem 0 0;
+      padding: 0;
     }
   }
 </style>
