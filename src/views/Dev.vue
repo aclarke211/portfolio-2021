@@ -119,11 +119,6 @@ export default {
             url: 'https://www.jdsports.co.uk/',
           },
           {
-            name: 'Tessuti',
-            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.vouchercloud.com%2Fimage%2Fupload%2Fw_200%2Cq_auto%2Cfl_strip_profile%2Cf_auto%2Ftessuti_logo_1.jpg&f=1&nofb=1',
-            url: 'https://www.tessuti.co.uk/',
-          },
-          {
             name: 'Size?',
             img: 'https://www.size.co.uk/skins/size-desktop/public/img/logos/logo-large-en.png',
             url: 'https://www.size.co.uk/',
@@ -132,6 +127,36 @@ export default {
             name: 'Footpatrol',
             img: 'https://www.footpatrol.com/skins/footpatrolgb-desktop/public/img/logos/logo-large-en.png',
             url: 'https://www.footpatrol.com/',
+          },
+          {
+            name: 'The Hip Store',
+            img: 'https://www.thehipstore.co.uk/skins/hipstoregb-desktop/public/img/logos/logo.png',
+            url: 'https://www.thehipstore.co.uk/',
+          },
+          {
+            name: 'Tessuti',
+            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.vouchercloud.com%2Fimage%2Fupload%2Fw_200%2Cq_auto%2Cfl_strip_profile%2Cf_auto%2Ftessuti_logo_1.jpg&f=1&nofb=1',
+            url: 'https://www.tessuti.co.uk/',
+          },
+          {
+            name: 'Scotts Menswear',
+            img: 'https://www.scottsmenswear.com/skins/scottsmenswear-desktop/public/img/logos/scottslogowhite.svg',
+            url: 'https://www.scottsmenswear.com/',
+          },
+          {
+            name: 'Aktiesport',
+            img: 'https://www.aktiesport.nl/skins/aktiesport-desktop/public/img/logos/logo-large-nl.png',
+            url: 'https://www.aktiesport.nl/',
+          },
+          {
+            name: 'Perrysport',
+            img: 'https://www.perrysport.nl/skins/perrysport-desktop/public/img/logos/logo-large-nl.png',
+            url: 'https://www.perrysport.nl/',
+          },
+          {
+            name: 'Choice Store',
+            img: 'https://www.choicestore.com/skins/choicegb-desktop/public/img/logos/logo.svg',
+            url: 'https://www.choicestore.com/',
           },
         ],
       },
