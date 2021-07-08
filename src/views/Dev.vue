@@ -53,6 +53,11 @@ export default {
             url: 'https://www.docker.com/',
           },
           {
+            name: 'React Native',
+            img: 'https://i8.amplience.net/i/jpl/icon-react-native-36054f172d39435416095035adb7e304',
+            url: 'https://reactnative.dev/',
+          },
+          {
             name: 'TeamCity',
             img: 'https://i8.amplience.net/i/jpl/icon-teamcity-a4b856ecfd687b05a2ad9fc45386823c',
             url: 'https://www.jetbrains.com/teamcity/',
@@ -61,11 +66,6 @@ export default {
             name: 'Octopus',
             img: 'https://i8.amplience.net/i/jpl/icon-octopus-31312c77f0887333152eb24adcb463b5',
             url: 'https://octopus.com/',
-          },
-          {
-            name: 'React Native',
-            img: 'https://i8.amplience.net/i/jpl/icon-react-native-36054f172d39435416095035adb7e304',
-            url: 'https://reactnative.dev/',
           },
           {
             name: 'Storybook',
@@ -140,7 +140,7 @@ export default {
           },
           {
             name: 'Scotts Menswear',
-            img: 'https://www.scottsmenswear.com/skins/scottsmenswear-desktop/public/img/logos/scottslogowhite.svg',
+            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwl3-cdn.landsec.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fshop_logo%2Fpublic%2Fimages%2Fshops%2Flogos%2Fscotts-menswear_0.png%3Fitok%3Dq9ZLGUOv&f=1&nofb=1',
             url: 'https://www.scottsmenswear.com/',
           },
           {
@@ -172,13 +172,14 @@ export default {
   padding: 0 0 12rem;
 
   @include desktop {
-    padding: 0 0 0;
+    padding: 0 0 8rem;
   }
 
   .section {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
+    max-width: 60rem;
 
     &:first-child {
       margin: 0;
