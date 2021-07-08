@@ -122,6 +122,10 @@ export default {
       text-decoration: none;
       flex: 1;
 
+      &:hover img {
+        filter: invert(100);
+      }
+
       @include desktop {
         margin: 2rem;
       }
@@ -129,6 +133,7 @@ export default {
       &__img {
         width: 4rem;
         height: 4rem;
+        transition: all .2s;
       }
 
       &__text {

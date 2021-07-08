@@ -224,6 +224,11 @@ export default {
         text-align: center;
         flex: 0 1 5rem;
         min-height: 8rem;
+        transition: all .35s;
+
+        &:hover {
+          background: #d8d9dd;
+        }
 
         &.inactive {
           color: red;
