@@ -43,6 +43,6 @@ body {
 .router {
   animation: fadeIn 1s;
   overflow-y: auto;
-  min-height: 80vh;
+  min-height: 95vh;
 }
 </style>
