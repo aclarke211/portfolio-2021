@@ -42,13 +42,18 @@ export default {
 
       a {
         font-weight: bold;
-        color: grey;
+        color: #695555;
         font-size: 2rem;
         margin: 1rem;
         text-decoration: none;
+        font-weight: 400;
 
         &.router-link-exact-active {
-          color: white;
+          background-image: linear-gradient(to bottom, #ebedf0, #97939c);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
         }
       }
     }

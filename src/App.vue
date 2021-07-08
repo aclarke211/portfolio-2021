@@ -20,7 +20,6 @@ export default {
 
 <style lang="scss">
 @import './css/base/mixins.scss';
-
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400');
 
 body {
@@ -28,16 +27,9 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  // background: linear-gradient(to bottom, #2f2a2a, #2c2929);
-  background: linear-gradient(-45deg, #3965dd, #db6cc0, #9579e0, #69ceb5);
+  background: linear-gradient(-45deg, #3965dd, #6cdb7e, #9579e0, #69ceb5);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-}
-
-.router {
-  animation: fadeIn 1.5s;
-  overflow-y: auto;
-  min-height: 75vh;
 }
 
 #app {
@@ -45,6 +37,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.router {
+  animation: fadeIn 1s;
+  overflow-y: auto;
+  min-height: 80vh;
 }
 </style>
