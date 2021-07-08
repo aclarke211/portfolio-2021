@@ -32,12 +32,12 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 1rem;
     box-sizing: border-box;
     background: linear-gradient(to bottom, #242323, #161515);
 
     #nav {
-      margin: 0 1rem 2rem;
+      margin: .5rem 1rem 1.5rem;
       height: 100%;
 
       a {
@@ -46,7 +46,6 @@ export default {
         font-size: 2rem;
         margin: 1rem;
         text-decoration: none;
-        font-weight: 400;
 
         &.router-link-exact-active {
           background-image: linear-gradient(to bottom, #ebedf0, #97939c);
@@ -65,7 +64,7 @@ export default {
     }
 
     .date {
-      font-size: .75rem;
+      font-size: .95rem;
       margin: 0;
       padding: 0;
     }

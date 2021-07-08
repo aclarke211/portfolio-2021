@@ -5,6 +5,7 @@
       v-for="(section, sectionKey) in sections"
       :key="sectionKey">
         <h1 class="title">{{ section.title }}</h1>
+        <h2 class="subtitle">{{ section.subtitle }}</h2>
         <div class="items__container">
           <a
           :class="['item', {'inactive': !item.url}]"
@@ -29,9 +30,10 @@ export default {
     sections: [
       {
         title: 'TECH',
+        subtitle: 'Frameworks, Libraries and Tools:',
         items: [
           {
-            name: 'Vue.js',
+            name: 'Vue',
             img: 'https://i8.amplience.net/i/jpl/icon-vue-20b8b379d338f4488705cae27d4849d9',
             url: 'https://vuejs.org/',
           },
@@ -39,6 +41,11 @@ export default {
             name: 'Node',
             img: 'https://i8.amplience.net/i/jpl/icon-node-js-84dae0c85887a8c7798e1a0df84fd34e',
             url: 'https://nodejs.org/',
+          },
+          {
+            name: 'MongoDB',
+            img: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.tumblr.com%2Flbtm3t2%2F8PAn0kziu%2Fmongodb-logo.png&f=1&nofb=1',
+            url: 'https://www.mongodb.com/',
           },
           {
             name: 'Docker',
@@ -51,7 +58,7 @@ export default {
             url: 'https://www.jetbrains.com/teamcity/',
           },
           {
-            name: 'Octopus Deploy',
+            name: 'Octopus',
             img: 'https://i8.amplience.net/i/jpl/icon-octopus-31312c77f0887333152eb24adcb463b5',
             url: 'https://octopus.com/',
           },
@@ -71,44 +78,60 @@ export default {
             url: 'https://vuepress.vuejs.org/',
           },
           {
+            name: 'Axios',
+            img: 'https://axios-http.com/assets/logo.svg',
+            url: 'https://axios-http.com/',
+          },
+          {
+            name: 'Jest',
+            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjestjs.io%2Fimg%2Fjest.png&f=1&nofb=1',
+            url: 'https://jestjs.io/',
+          },
+          {
             name: 'Sass',
             img: 'https://i8.amplience.net/i/jpl/icon-sass-71c79f464ca2cf8de7ad093e48d5cccd',
             url: 'https://sass-lang.com/',
           },
           {
-            name: 'ES6 JS',
+            name: 'JavaScript',
             img: 'https://i8.amplience.net/i/jpl/icon-javascript-608be566b0e69846cb2001d867640bed',
-            url: '',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/javascript',
           },
           {
-            name: 'CSS3',
+            name: 'CSS',
             img: 'https://i8.amplience.net/i/jpl/icon-css-04cf122be0afe7542083d1a3967390ae',
-            url: '',
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
           },
           {
             name: 'HTML5',
             img: 'https://i8.amplience.net/i/jpl/icon-html-7fa80d12263e1acbfc0af3c0e72f6085',
-            url: '',
+            url: 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5',
           },
         ],
       },
       {
         title: 'SITES',
+        subtitle: 'Projects contributed towards:',
         items: [
           {
             name: 'JD Sports',
-            img: 'https://www.jdsports.co.uk/skins/jdsports-desktop/public/img/logos/logo-large-en.png',
+            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fjd-sports-logo-png-transparent.png&f=1&nofb=1',
             url: 'https://www.jdsports.co.uk/',
           },
           {
             name: 'Tessuti',
-            img: 'https://media-oneiotastore-com.s3.amazonaws.com/mesh-control/a10912a679674345bf8c02c441b579ba_tessutiLogo.png',
+            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.vouchercloud.com%2Fimage%2Fupload%2Fw_200%2Cq_auto%2Cfl_strip_profile%2Cf_auto%2Ftessuti_logo_1.jpg&f=1&nofb=1',
             url: 'https://www.tessuti.co.uk/',
           },
           {
             name: 'Size?',
             img: 'https://www.size.co.uk/skins/size-desktop/public/img/logos/logo-large-en.png',
             url: 'https://www.size.co.uk/',
+          },
+          {
+            name: 'Footpatrol',
+            img: 'https://www.footpatrol.com/skins/footpatrolgb-desktop/public/img/logos/logo-large-en.png',
+            url: 'https://www.footpatrol.com/',
           },
         ],
       },
@@ -124,13 +147,13 @@ export default {
   padding: 0 0 12rem;
 
   @include desktop {
-    padding: 0 0 10rem;
+    padding: 0 0 0;
   }
 
   .section {
     display: flex;
     flex-direction: column;
-    margin: .5rem 0;
+    margin: 1rem 0;
 
     &:first-child {
       margin: 0;
@@ -144,10 +167,12 @@ export default {
       font-size: 2rem;
       margin: 1rem;
       text-shadow: 1px 2px #363636;
+    }
 
-      @include desktop {
-        margin: 1rem 0;
-      }
+    .subtitle {
+      font-size: 1.5rem;
+      margin: 0 1rem 1rem;
+      text-shadow: 1px 2px #363636;
     }
 
     .items__container {
@@ -182,7 +207,10 @@ export default {
         &__img {
           width: 80px;
           height: auto;
+          object-fit: contain;
+          min-height: 3rem;
           display: block;
+          border-radius: .15rem;
 
           @include desktop {
             width: 60px;
