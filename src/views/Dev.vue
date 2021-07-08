@@ -53,11 +53,6 @@ export default {
             url: 'https://www.docker.com/',
           },
           {
-            name: 'React Native',
-            img: 'https://i8.amplience.net/i/jpl/icon-react-native-36054f172d39435416095035adb7e304',
-            url: 'https://reactnative.dev/',
-          },
-          {
             name: 'TeamCity',
             img: 'https://i8.amplience.net/i/jpl/icon-teamcity-a4b856ecfd687b05a2ad9fc45386823c',
             url: 'https://www.jetbrains.com/teamcity/',
@@ -78,11 +73,6 @@ export default {
             url: 'https://vuepress.vuejs.org/',
           },
           {
-            name: 'Three.js',
-            img: 'https://i8.amplience.net/i/jpl/three-js-logo-c8c4b280b5d01b54a9155dc41e2b0371',
-            url: 'https://threejs.org/',
-          },
-          {
             name: 'Axios',
             img: 'https://i8.amplience.net/i/jpl/axios-logo-59b90233bbde980a526ad590e27780a2',
             url: 'https://axios-http.com/',
@@ -91,6 +81,16 @@ export default {
             name: 'Jest',
             img: 'https://i8.amplience.net/i/jpl/jest-logo-2e732c3e8fd0b5b30b4dd0b5b4d274f5',
             url: 'https://jestjs.io/',
+          },
+          {
+            name: 'React Native',
+            img: 'https://i8.amplience.net/i/jpl/icon-react-native-36054f172d39435416095035adb7e304',
+            url: 'https://reactnative.dev/',
+          },
+          {
+            name: 'Three.js',
+            img: 'https://i8.amplience.net/i/jpl/three-js-logo-c8c4b280b5d01b54a9155dc41e2b0371',
+            url: 'https://threejs.org/',
           },
           {
             name: 'Sass',
