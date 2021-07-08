@@ -98,6 +98,16 @@ export default {
             url: 'https://sass-lang.com/',
           },
           {
+            name: 'JIRA',
+            img: 'https://i8.amplience.net/i/jpl/jira-logo-41377032cc34c0abd4beb89a30e0807e',
+            url: 'https://www.atlassian.com/software/jira',
+          },
+          {
+            name: 'NPM',
+            img: 'https://i8.amplience.net/i/jpl/npm-logo-332d55d0e01866951bb34a1d7846da92',
+            url: 'https://www.npmjs.com/',
+          },
+          {
             name: 'JavaScript',
             img: 'https://i8.amplience.net/i/jpl/icon-javascript-608be566b0e69846cb2001d867640bed',
             url: 'https://developer.mozilla.org/en-US/docs/Web/javascript',
