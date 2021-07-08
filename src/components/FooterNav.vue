@@ -6,7 +6,7 @@
       <!-- <router-link to="/sites">Sites</router-link> -->
     </div>
     <!-- <img class="badge" src="../assets/team-lead-sig.png" /> -->
-    <p class="date">Alex Clarke 2021</p>
+    <p class="date">Alex Clarke | 2021</p>
   </div>
 </template>
 

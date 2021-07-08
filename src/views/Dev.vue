@@ -44,7 +44,7 @@ export default {
           },
           {
             name: 'MongoDB',
-            img: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.tumblr.com%2Flbtm3t2%2F8PAn0kziu%2Fmongodb-logo.png&f=1&nofb=1',
+            img: 'https://i8.amplience.net/i/jpl/mongodb-logo-8db9194e54f81a6ed4304eabe08639dd',
             url: 'https://www.mongodb.com/',
           },
           {
@@ -78,13 +78,18 @@ export default {
             url: 'https://vuepress.vuejs.org/',
           },
           {
+            name: 'Three.js',
+            img: 'https://i8.amplience.net/i/jpl/three-js-logo-c8c4b280b5d01b54a9155dc41e2b0371',
+            url: 'https://threejs.org/',
+          },
+          {
             name: 'Axios',
-            img: 'https://axios-http.com/assets/logo.svg',
+            img: 'https://i8.amplience.net/i/jpl/axios-logo-59b90233bbde980a526ad590e27780a2',
             url: 'https://axios-http.com/',
           },
           {
             name: 'Jest',
-            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjestjs.io%2Fimg%2Fjest.png&f=1&nofb=1',
+            img: 'https://i8.amplience.net/i/jpl/jest-logo-2e732c3e8fd0b5b30b4dd0b5b4d274f5',
             url: 'https://jestjs.io/',
           },
           {
@@ -115,7 +120,7 @@ export default {
         items: [
           {
             name: 'JD Sports',
-            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fjd-sports-logo-png-transparent.png&f=1&nofb=1',
+            img: 'https://i8.amplience.net/i/jpl/jd-600-black-081bf84ea8e2c71b637bf48541cd07d8',
             url: 'https://www.jdsports.co.uk/',
           },
           {
@@ -154,9 +159,29 @@ export default {
             url: 'https://www.perrysport.nl/',
           },
           {
+            name: 'Supply & Demand',
+            img: 'https://mesh-uploads-production.s3.amazonaws.com/mesh-uploads/undefined/2020/8/dfd8c79a-a321-4f10-bfa1-bbf70129084a_Mesh_Landing_Page_Icons_Supply_and_Demand.png',
+            url: 'https://www.supplyanddemand.co.uk/',
+          },
+          {
             name: 'Choice Store',
             img: 'https://www.choicestore.com/skins/choicegb-desktop/public/img/logos/logo.svg',
             url: 'https://www.choicestore.com/',
+          },
+          {
+            name: 'Scotland Football Shop',
+            img: 'https://www.scotlandfootballshop.co.uk/skins/jdsfa-desktop/public/img/logos/logo.png',
+            url: 'https://www.scotlandfootballshop.co.uk/',
+          },
+          {
+            name: 'Wales Football Shop',
+            img: 'https://www.walesfootballshop.co.uk/skins/jdwfa-desktop/public/img/logos/logo.png',
+            url: 'https://www.walesfootballshop.co.uk/',
+          },
+          {
+            name: 'NI Football Shop',
+            img: 'https://www.northernirelandfootballshop.co.uk/skins/jdnifa-desktop/public/img/logos/logo.png',
+            url: 'https://www.northernirelandfootballshop.co.uk/',
           },
         ],
       },
@@ -222,7 +247,7 @@ export default {
         background:#ebedf0;
         border-radius: .25rem;
         text-align: center;
-        flex: 0 1 5rem;
+        flex: 0 1 6rem;
         min-height: 8rem;
         transition: all .35s;
 
