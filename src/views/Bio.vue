@@ -86,6 +86,7 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    transition: all .25s;
 
     .word {
       font-size: 3.5rem;
@@ -112,6 +113,7 @@ export default {
     align-items: center;
     margin: 1rem;
     flex-wrap: wrap;
+    transition: all .25s;
 
     .link {
       display: flex;
@@ -121,10 +123,21 @@ export default {
       margin: 1rem;
       text-decoration: none;
       flex: 1;
+      transition: all .25s;
+
+      &:hover {
+        margin-top: 1rem;
+      }
 
       &:hover img {
         filter: invert(100);
+         width: 4.35rem;
+        height: 4.35rem;
       }
+
+      &:hover .link__text {
+          text-shadow: 3px 3px 3px #363636;
+        }
 
       @include desktop {
         margin: 2rem;
@@ -133,7 +146,7 @@ export default {
       &__img {
         width: 4rem;
         height: 4rem;
-        transition: all .2s;
+        transition: all .25s;
       }
 
       &__text {
@@ -141,7 +154,8 @@ export default {
         color: white;
         margin: .5rem 0;
         padding: 0;
-        text-shadow: 1px 2px #363636;
+        text-shadow: 2px 2px 2px #363636;
+        transition: all .25s;
       }
     }
   }

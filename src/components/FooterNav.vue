@@ -47,8 +47,12 @@ export default {
         margin: 1rem;
         text-decoration: none;
 
+        &:hover {
+          color: #9e9797;
+        }
+
         &.router-link-exact-active {
-          background-image: linear-gradient(to bottom, #ebedf0, #97939c);
+          background-image: linear-gradient(to bottom, #ebedf0, #aaa8ad);
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;

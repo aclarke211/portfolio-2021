@@ -78,14 +78,14 @@ export default {
             url: 'https://axios-http.com/',
           },
           {
+            name: 'PM2',
+            img: '../assets/logos/pm2__logo.png',
+            url: 'https://pm2.keymetrics.io/',
+          },
+          {
             name: 'Jest',
             img: 'https://i8.amplience.net/i/jpl/jest-logo-2e732c3e8fd0b5b30b4dd0b5b4d274f5',
             url: 'https://jestjs.io/',
-          },
-          {
-            name: 'React Native',
-            img: 'https://i8.amplience.net/i/jpl/icon-react-native-36054f172d39435416095035adb7e304',
-            url: 'https://reactnative.dev/',
           },
           {
             name: 'Three.js',
@@ -96,6 +96,11 @@ export default {
             name: 'Sass',
             img: 'https://i8.amplience.net/i/jpl/icon-sass-71c79f464ca2cf8de7ad093e48d5cccd',
             url: 'https://sass-lang.com/',
+          },
+          {
+            name: 'React Native',
+            img: 'https://i8.amplience.net/i/jpl/icon-react-native-36054f172d39435416095035adb7e304',
+            url: 'https://reactnative.dev/',
           },
           {
             name: 'JIRA',
@@ -134,9 +139,29 @@ export default {
             url: 'https://www.jdsports.co.uk/',
           },
           {
+            name: 'Aktiesport',
+            img: 'https://www.aktiesport.nl/skins/aktiesport-desktop/public/img/logos/logo-large-nl.png',
+            url: 'https://www.aktiesport.nl/',
+          },
+          {
+            name: 'Choice Store',
+            img: 'https://www.choicestore.com/skins/choicegb-desktop/public/img/logos/logo.svg',
+            url: 'https://www.choicestore.com/',
+          },
+          {
+            name: 'Tessuti',
+            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.vouchercloud.com%2Fimage%2Fupload%2Fw_200%2Cq_auto%2Cfl_strip_profile%2Cf_auto%2Ftessuti_logo_1.jpg&f=1&nofb=1',
+            url: 'https://www.tessuti.co.uk/',
+          },
+          {
             name: 'Size?',
             img: 'https://www.size.co.uk/skins/size-desktop/public/img/logos/logo-large-en.png',
             url: 'https://www.size.co.uk/',
+          },
+          {
+            name: 'Perrysport',
+            img: 'https://www.perrysport.nl/skins/perrysport-desktop/public/img/logos/logo-large-nl.png',
+            url: 'https://www.perrysport.nl/',
           },
           {
             name: 'Footpatrol',
@@ -149,34 +174,14 @@ export default {
             url: 'https://www.thehipstore.co.uk/',
           },
           {
-            name: 'Tessuti',
-            img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.vouchercloud.com%2Fimage%2Fupload%2Fw_200%2Cq_auto%2Cfl_strip_profile%2Cf_auto%2Ftessuti_logo_1.jpg&f=1&nofb=1',
-            url: 'https://www.tessuti.co.uk/',
-          },
-          {
             name: 'Scotts Menswear',
             img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwl3-cdn.landsec.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fshop_logo%2Fpublic%2Fimages%2Fshops%2Flogos%2Fscotts-menswear_0.png%3Fitok%3Dq9ZLGUOv&f=1&nofb=1',
             url: 'https://www.scottsmenswear.com/',
           },
           {
-            name: 'Aktiesport',
-            img: 'https://www.aktiesport.nl/skins/aktiesport-desktop/public/img/logos/logo-large-nl.png',
-            url: 'https://www.aktiesport.nl/',
-          },
-          {
-            name: 'Perrysport',
-            img: 'https://www.perrysport.nl/skins/perrysport-desktop/public/img/logos/logo-large-nl.png',
-            url: 'https://www.perrysport.nl/',
-          },
-          {
             name: 'Supply & Demand',
             img: 'https://mesh-uploads-production.s3.amazonaws.com/mesh-uploads/undefined/2020/8/dfd8c79a-a321-4f10-bfa1-bbf70129084a_Mesh_Landing_Page_Icons_Supply_and_Demand.png',
             url: 'https://www.supplyanddemand.co.uk/',
-          },
-          {
-            name: 'Choice Store',
-            img: 'https://www.choicestore.com/skins/choicegb-desktop/public/img/logos/logo.svg',
-            url: 'https://www.choicestore.com/',
           },
           {
             name: 'Scotland Football Shop',
@@ -262,7 +267,17 @@ export default {
         transition: all .35s;
 
         &:hover {
-          background: #d8d9dd;
+          background: #d6d6db;
+        }
+
+        &:hover .item__img {
+            width: 75px;
+          }
+
+        @include desktop {
+          &:hover .item__img {
+            width: 57px;
+          }
         }
 
         &.inactive {
@@ -277,6 +292,7 @@ export default {
           min-height: 3rem;
           display: block;
           border-radius: .15rem;
+          transition: all .25s;
 
           @include desktop {
             width: 60px;
