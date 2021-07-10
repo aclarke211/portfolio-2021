@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss">
 @import './css/base/mixins.scss';
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400&family=Jomhuria');
 
 body {
   margin: 0;

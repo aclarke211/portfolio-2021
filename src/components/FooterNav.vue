@@ -6,7 +6,11 @@
       <!-- <router-link to="/sites">Sites</router-link> -->
     </div>
     <!-- <img class="badge" src="../assets/team-lead-sig.png" /> -->
-    <p class="date">Alex Clarke | 2021</p>
+    <p class="footer__info">
+    <span class="author">Alex Clarke</span>
+     |
+    <span class="date">2021</span>
+    </p>
   </div>
 </template>
 
@@ -67,10 +71,19 @@ export default {
       border-radius: .25rem;
     }
 
-    .date {
-      font-size: .95rem;
-      margin: 0;
-      padding: 0;
+    .footer__info {
+      .author {
+        font-family: 'Jomhuria', 'sans-serif';
+        letter-spacing: -.25px;
+        font-size: 1.5rem;
+      }
+
+      .date {
+        font-size: .95rem;
+        margin: 0;
+        padding: 0;
+      }
     }
+
   }
 </style>
