@@ -8,13 +8,14 @@
         <h2 class="subtitle">{{ section.subtitle }}</h2>
         <div class="items__container">
           <a
-          :class="['item', {'inactive': !item.url}]"
+          :class="['item', { 'inactive': !item.url }, { 'no-text': !item.text }]"
           v-for="(item, itemKey) in section.items"
           :key="itemKey"
           :href="item.url || false"
           target="_none">
             <img class="item__img" :src="item.img" />
             <p class="item__name">{{ item.name }}</p>
+            <p class="item__text" v-html="item.text"/>
           </a>
         </div>
     </section>
@@ -36,16 +37,19 @@ export default {
             name: 'Vue',
             img: 'https://i8.amplience.net/i/jpl/icon-vue-20b8b379d338f4488705cae27d4849d9',
             url: 'https://vuejs.org/',
+            text: 'Developed CMS, User Portal & Asset Manager',
           },
           {
             name: 'Node',
             img: 'https://i8.amplience.net/i/jpl/icon-node-js-84dae0c85887a8c7798e1a0df84fd34e',
             url: 'https://nodejs.org/',
+            text: 'Run servers and APIs',
           },
           {
             name: 'MongoDB',
             img: 'https://i8.amplience.net/i/jpl/mongodb-logo-8db9194e54f81a6ed4304eabe08639dd',
             url: 'https://www.mongodb.com/',
+            text: 'Store and retrieve data for projects.',
           },
           {
             name: 'Docker',
@@ -76,11 +80,13 @@ export default {
             name: 'Axios',
             img: 'https://i8.amplience.net/i/jpl/axios-logo-59b90233bbde980a526ad590e27780a2',
             url: 'https://axios-http.com/',
+            text: 'axios',
           },
           {
             name: 'PM2',
             img: '../assets/logos/pm2__logo.png',
             url: 'https://pm2.keymetrics.io/',
+            text: 'pm2',
           },
           {
             name: 'Jest',
@@ -219,7 +225,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
-    max-width: 60rem;
+    max-width: 65rem;
 
     &:first-child {
       margin: 0;
@@ -246,6 +252,7 @@ export default {
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
+      transition: all .25s ease-in-out;
 
       @include desktop {
         justify-content: flex-start;
@@ -262,17 +269,31 @@ export default {
         background:#ebedf0;
         border-radius: .25rem;
         text-align: center;
-        flex: 0 1 6rem;
+        flex: 0 1 10.25%;
         min-height: 8rem;
-        transition: all .35s;
+        transition: all .45s ease-in-out;
+        overflow: hidden;
 
         &:hover {
           background: #d6d6db;
+          flex: 1 0 15%;
+          min-width: 10.25%;
+        }
+
+        &.no-text {
+          &:hover {
+            flex: 0 1 10.25%;
+          }
         }
 
         &:hover .item__img {
-            width: 75px;
-          }
+          width: 75px;
+        }
+
+        &:hover .item__text {
+          opacity: 1;
+          height: auto;
+        }
 
         @include desktop {
           &:hover .item__img {
@@ -281,7 +302,6 @@ export default {
         }
 
         &.inactive {
-          color: red;
           opacity: .5;
         }
 
@@ -292,7 +312,7 @@ export default {
           min-height: 3rem;
           display: block;
           border-radius: .15rem;
-          transition: all .25s;
+          transition: all .25s ease-in-out;
 
           @include desktop {
             width: 60px;
@@ -303,6 +323,15 @@ export default {
           font-size: 1rem;
           font-weight: 600;
           color: #505050;
+          transition: all .25s ease-in-out;
+        }
+
+        &__text {
+          opacity: 0;
+          padding: 0;
+          margin: 0;
+          transition: all .25s ease-in-out, opacity 0s;
+          height: 0;
         }
       }
     }
