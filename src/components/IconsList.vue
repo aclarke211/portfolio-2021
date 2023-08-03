@@ -142,7 +142,6 @@ export default {
   content: url(https://i8.amplience.net/i/jpl/icon-opera-052f608a533ee0d5abe8f9e6b6151bb3/?qlt=80&w=45);
 }
 
-
 .tech.nodejs {
   border-color: #6BC24A;
 }
