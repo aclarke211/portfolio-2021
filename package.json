@@ -62,5 +62,9 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }
