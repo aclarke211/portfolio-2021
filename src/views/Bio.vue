@@ -32,20 +32,17 @@ export default {
       {
         text: 'GitHub',
         url: 'https://github.com/aclarke211',
-        img:
-          'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.seeklogo.net%2Fwp-content%2Fuploads%2F2015%2F09%2Fgithub-mark-logo-400x400.png&f=1&nofb=1',
+        img: '../assets/bio/github-logo.jpeg',
       },
       {
         text: 'CodePen',
         url: 'https://codepen.io/aclarke211',
-        img:
-          'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmaxcdn.icons8.com%2FAndroid_L%2FPNG%2F512%2FLogos%2Fcodepen-512.png&f=1&nofb=1',
+        img: '../assets/bio/codepen-logo.jpeg',
       },
       {
         text: 'Linkedin',
         url: 'https://www.linkedin.com/in/aclarke211/',
-        img:
-          'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogoeps.com%2Fwp-content%2Fuploads%2F2014%2F09%2F34405-linkedin-logo-icon-vector-icon-vector-eps.png&f=1&nofb=1',
+        img: '../assets/bio/linkedin-logo.jpeg',
       },
     ],
   }),
